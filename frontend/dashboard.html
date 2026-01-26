@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VAYU Dashboard</title>
+
+  <link rel="stylesheet" href="../frontend/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+  <img src="../frontend/assets/logo/png/logo-no-bg.png" alt="VAYU Logo" class="logo" />
+  <div class="location">
+    <i class="fa-solid fa-location-dot"></i> Kothrud, Pune
+  </div>
+</header>
+
+<main class="container">
+  <section class="cards">
+    <div class="card">
+      <h4>Current AQI</h4>
+      <h2>72</h2>
+    </div>
+    <div class="card">
+      <h4>Tomorrow Forecast</h4>
+      <h2>165</h2>
+    </div>
+    <div class="card">
+      <h4>Health Risk</h4>
+      <h2 style="color: #ef4444;">High</h2>
+    </div>
+  </section>
+
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>AQI Trend (Last 14 Days)</h3>
+      <div class="chart-wrap"><canvas id="aqiChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h3>Pollutant Breakdown</h3>
+      <div class="chart-wrap"><canvas id="pollutantChart"></canvas></div>
+    </div>
+  </div>
+
+  <section class="gen-ai">
+  <h3>
+    <i class="fa-solid fa-brain"></i>
+    AI Health Insight
+  </h3>
+
+  <p>
+    Based on analysis of recent <strong>daily air quality trends</strong>,
+    pollution levels in <strong>Kothrud</strong> are showing a consistent upward
+    movement, primarily influenced by particulate matter (PM₂.₅).
+  </p>
+
+  <p>
+    While this forecast does not resolve hourly fluctuations, the overall
+    trajectory suggests that air quality is likely to remain in the
+    <strong>unhealthy range</strong> over the next day if current conditions persist.
+  </p>
+
+  <p>
+    Residents are advised to reduce prolonged outdoor exposure, particularly
+    individuals with respiratory sensitivities. Maintaining indoor air
+    quality through ventilation control and filtration can help mitigate
+    health risks during elevated pollution periods.
+  </p>
+
+  <!-- VAYU ADVISORY LINE -->
+  <div class="vayu-advisory">
+    <i class="fa-solid fa-shield-heart"></i>
+    <span>VAYU Advisory: Guidance derived from daily air quality trend analysis</span>
+  </div>
+</section>
+
+  <section id="about" class="about">
+    <div class="about-text">
+  <h2>About VAYU</h2>
+
+  <p>
+    <strong>VAYU</strong> is a localized air quality forecasting and advisory platform
+    built using government-validated data from monitoring stations near
+    <strong>MIT–Kothrud</strong>.
+  </p>
+
+  <p>
+    The system analyzes daily AQI and pollutant trends and uses a lightweight
+    machine learning model to predict the next day’s air quality risk.
+    This short-term focus ensures reliable and practical forecasts.
+  </p>
+
+  <p>
+    When unsafe conditions are expected, VAYU generates early warnings and
+    translates predictions into clear health advisories using an AI-assisted layer.
+  </p>
+
+  <p>
+    The name <strong>VAYU</strong>, derived from the Sanskrit word for <em>air</em>,
+    reflects the goal of making air quality risks visible and understandable.
+  </p>
+</div>
+
+    <div class="about-visual">
+        <img src="../frontend/assets/logo/png/just-icon-logo.png" alt="AI Forecasting Illustration" />
+       <p style="color: var(--navy); font-weight: 600;">AI Powered Forecasting</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    <strong>VAYU</strong> &copy; 2026 | Smart Air Quality Labs
+  </div>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Data Sources</a>
+    <a href="#">API Documentation</a>
+    <a href="https://github.com/yourusername/vayu" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+</footer>
+
+<script src="../frontend/js/script.js"></script>
+</body>
+</html>
