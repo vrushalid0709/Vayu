@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="frontend/assets/logos/png/logo-color.png" alt="VAYU Logo" width="180"/>
+  <img src="frontend/assets/logo/png/logo-color.png" alt="VAYU Logo" width="180"/>
 </p>
 
 **Data-Driven Air Quality Analytics and Forecasting Dashboard**
