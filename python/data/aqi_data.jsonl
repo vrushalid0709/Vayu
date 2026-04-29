@@ -1,0 +1,57 @@
+{"aqi": 49, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-28 21:15:00", "pm25": 49, "pm10": 36, "no2": 4, "co": 3}
+{"aqi": 41, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-28 21:30:00", "pm25": 41, "pm10": 41, "no2": 3, "co": 3}
+{"aqi": 54, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 15:00:00", "pm25": 54, "pm10": 39, "no2": 0, "co": 0}
+{"aqi": 54, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 15:45:00", "pm25": 54, "pm10": 39, "no2": 0, "co": 0}
+{"aqi": 51, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 16:00:00", "pm25": 51, "pm10": 37, "no2": 0, "co": 0}
+{"aqi": 55, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 16:30:00", "pm25": 55, "pm10": 37, "no2": 0, "co": 0}
+{"aqi": 60, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 16:45:00", "pm25": 60, "pm10": 37, "no2": 0, "co": 0}
+{"aqi": 55, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 17:30:00", "pm25": 55, "pm10": 37, "no2": 0, "co": 1}
+{"aqi": 49, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 18:00:00", "pm25": 49, "pm10": 37, "no2": 1, "co": 1}
+{"aqi": 49, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 18:15:00", "pm25": 49, "pm10": 37, "no2": 1, "co": 1}
+{"aqi": 31, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 20:30:00", "pm25": 23, "pm10": 31, "no2": 2, "co": 2}
+{"aqi": 31, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 21:15:00", "pm25": 20, "pm10": 31, "no2": 3, "co": 2}
+{"aqi": 31, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 21:30:00", "pm25": 18, "pm10": 31, "no2": 3, "co": 2}
+{"aqi": 31, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 21:30:00", "hour": 21, "pm25": 18.0, "pm10": 31.0, "no2": 3.0, "co": 2.0}
+{"aqi": 31, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 21:45:00", "hour": 21, "pm25": 16.0, "pm10": 31.0, "no2": 2.0, "co": 2.0}
+{"aqi": 31, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 22:00:00", "hour": 22, "pm25": 16.0, "pm10": 31.0, "no2": 2.0, "co": 2.0}
+{"aqi": 31, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 22:15:00", "hour": 22, "pm25": 16.0, "pm10": 31.0, "no2": 3.0, "co": 2.0}
+{"aqi": 31, "station": "Ghatkopar, Mumbai", "timestamp": "2026-03-29 22:30:00", "hour": 22, "pm25": 19.0, "pm10": 31.0, "no2": 2.0, "co": 1.0}
+{"aqi": 61, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-01 11:45:00", "hour": 11, "pm25": 61.0, "pm10": 58.0, "no2": 2.0, "co": 1.0}
+{"aqi": 61, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-01 11:45:00", "hour": 11, "pm25": 61.0, "pm10": 58.0, "no2": 2.0, "co": 1.0}
+{"aqi": 42, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-02 05:00:00", "hour": 5, "pm25": 42.0, "pm10": 39.0, "no2": 3.0, "co": 1.0}
+{"aqi": 42, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-02 05:15:00", "hour": 5, "pm25": 42.0, "pm10": 39.0, "no2": 3.0, "co": 1.0}
+{"aqi": 49, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-02 05:30:00", "hour": 5, "pm25": 46.0, "pm10": 49.0, "no2": 2.0, "co": 1.0}
+{"aqi": 49, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-02 05:30:00", "hour": 5, "pm25": 46.0, "pm10": 49.0, "no2": 2.0, "co": 1.0}
+{"aqi": 49, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-02 05:30:00", "hour": 5, "pm25": 46.0, "pm10": 49.0, "no2": 2.0, "co": 1.0}
+{"aqi": 51, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-02 06:15:00", "hour": 6, "pm25": 51.0, "pm10": 49.0, "no2": 3.0, "co": 1.0}
+{"aqi": 45, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-02 10:00:00", "hour": 10, "pm25": 41.0, "pm10": 45.0, "no2": 2.0, "co": 1.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-09 11:45:00", "hour": 11, "pm25": 120.0, "pm10": 71.0, "no2": 2.0, "co": 3.0}
+{"aqi": 132, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-24 14:30:00", "hour": 14, "pm25": 132.0, "pm10": 74.0, "no2": 2.0, "co": 0.0}
+{"aqi": 129, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-24 15:15:00", "hour": 15, "pm25": 129.0, "pm10": 75.0, "no2": 4.0, "co": 0.0}
+{"aqi": 109, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-24 16:00:00", "hour": 16, "pm25": 109.0, "pm10": 75.0, "no2": 3.0, "co": 1.0}
+{"aqi": 114, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-24 16:30:00", "hour": 16, "pm25": 114.0, "pm10": 75.0, "no2": 4.0, "co": 1.0}
+{"aqi": 114, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-24 16:30:00", "hour": 16, "pm25": 114.0, "pm10": 75.0, "no2": 4.0, "co": 1.0}
+{"aqi": 114, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-24 16:30:00", "hour": 16, "pm25": 114.0, "pm10": 75.0, "no2": 4.0, "co": 1.0}
+{"aqi": 118, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-24 16:45:00", "hour": 16, "pm25": 118.0, "pm10": 75.0, "no2": 4.0, "co": 1.0}
+{"aqi": 118, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-24 16:45:00", "hour": 16, "pm25": 118.0, "pm10": 75.0, "no2": 4.0, "co": 1.0}
+{"aqi": 118, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-24 17:00:00", "hour": 17, "pm25": 118.0, "pm10": 75.0, "no2": 4.0, "co": 1.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-26 18:00:00", "hour": 18, "pm25": 120.0, "pm10": 68.0, "no2": 2.0, "co": 0.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-26 18:15:00", "hour": 18, "pm25": 120.0, "pm10": 68.0, "no2": 2.0, "co": 0.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-26 18:15:00", "hour": 18, "pm25": 120.0, "pm10": 68.0, "no2": 2.0, "co": 0.0}
+{"aqi": 120, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-26 18:15:00", "hour": 18, "pm25": 120.0, "pm10": 68.0, "no2": 2.0, "co": 0.0}
+{"aqi": 106, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-26 19:15:00", "hour": 19, "pm25": 106.0, "pm10": 66.0, "no2": 2.0, "co": 1.0}
+{"aqi": 111, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-26 19:45:00", "hour": 19, "pm25": 111.0, "pm10": 64.0, "no2": 2.0, "co": 1.0}
+{"aqi": 96, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-26 21:00:00", "hour": 21, "pm25": 96.0, "pm10": 64.0, "no2": 2.0, "co": 2.0}
+{"aqi": 96, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-26 21:00:00", "hour": 21, "pm25": 96.0, "pm10": 64.0, "no2": 2.0, "co": 2.0}
+{"aqi": 112, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-27 10:15:00", "hour": 10, "pm25": 112.0, "pm10": 59.0, "no2": 2.0, "co": 2.0}
+{"aqi": 104, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-27 10:30:00", "hour": 10, "pm25": 104.0, "pm10": 59.0, "no2": 2.0, "co": 2.0}
+{"aqi": 117, "station": "Ghatkopar, Mumbai", "timestamp": "2026-04-29 14:00:00", "hour": 14, "pm25": 117.0, "pm10": 65.0, "no2": 2.0, "co": 1.0}

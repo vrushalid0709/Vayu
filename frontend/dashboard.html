@@ -1,131 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VAYU Dashboard</title>
-
-  <link rel="stylesheet" href="../frontend/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAYU Hero Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../frontend/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../frontend/assets/logo/png/logo-no-bg.png" alt="Vayu Logo" class="logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#analysis">Dashboard</a></li>
+            <li><a href="#how-it-works">About Us</a></li>
+            <li><a href="#philosophy">Awareness</a></li>
+        </ul>
+        <button class="login-btn" onclick="document.getElementById('future').scrollIntoView({behavior: 'smooth'})">Future Mission</button>
+    </nav>
 
-    <header class="header">
-  <img src="../frontend/assets/logo/png/logo-no-bg.png" alt="VAYU Logo" class="logo" />
-  <div class="location">
-    <i class="fa-solid fa-location-dot"></i> Kothrud, Pune
-  </div>
-</header>
+    <header class="hero-section" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Hyper-Local Intelligence</span>
+                <h1>Breathe smarter,<br><span>Where You Are.</span></h1>
+                <p>Simple, real-time air quality information for your surroundings; helping you decide when to step out, slow down, or take a deep breath.</p>
+                <div class="cta-group">
+                    <button class="btn-primary">Check My Area</button>
+                </div>
+            </div>
 
-<main class="container">
-  <section class="cards">
-    <div class="card">
-      <h4>Current AQI</h4>
-      <h2>72</h2>
+            <div class="hero-visuals">
+                <div class="glass-card card-main">
+                    <div class="location-header">
+                        <span id="hero-station">Mumbai, IN</span>
+                        <div class="live-indicator">
+                            <div class="dot"></div> LIVE
+                        </div>
+                    </div>
+                    <div class="aqi-display">
+                        <div class="aqi-val" id="hero-aqi">--</div>
+                        <div class="aqi-unit">AQI Index</div>
+                    </div>
+                    <div class="status-bar">
+                        <div class="status-fill"></div>
+                    </div>
+                    <div class="status-text" id="hero-label">Loading...</div>
+                </div>
+
+                <div class="glass-card card-sub">
+                    <div class="sub-stat-label">PM2.5 Conc.</div>
+                    <div class="sub-stat-val" id="hero-pm25">-- <span style="font-size:1rem; color:#64748b;">µg</span></div>
+                    <div style="margin-top:10px; font-size:0.8rem; color:var(--brand-red);">
+                        ▲ Live reading
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="dashboard-section" id="analysis">
+        <div class="dash-container">
+            <div class="dash-header">
+                <div class="live-pill">
+                    <span class="dot-pulse"></span> Live Feed
+                </div>
+                <h2>Air Intelligence Dashboard</h2>
+                <p>Real-time sensor data and 3-hour predictive analysis for <strong>Mumbai, IN</strong>. Updated every 15 minutes.</p>
+            </div>
+
+            <div class="dash-content">
+
+                <div class="row-flex">
+                    <div class="dash-card aqi-card">
+                        <h3>Current Status</h3>
+                        <div class="aqi-circle">
+                            <svg viewBox="0 0 36 36" class="circular-chart">
+                                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" id="aqi-circle-path" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <div class="aqi-inner">
+                                <span class="aqi-value" id="dash-aqi">--</span>
+                                <span class="aqi-label" id="dash-label">Loading</span>
+                            </div>
+                        </div>
+                        <div class="safe-msg" id="safe-msg">
+                            Fetching data...
+                        </div>
+                    </div>
+
+                    <div class="dash-card alerts-card">
+                        <h3>Hourly Forecast</h3>
+                        <div class="alert-list" id="forecast-list">
+                            <p style="color:#64748b;padding:1rem;">Loading forecast...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-flex">
+                    <div class="dash-card activity-card">
+                        <h3>Activity Guide</h3>
+                        <div class="activity-grid" id="activity-grid">
+                            <p style="color:#64748b;">Loading activities...</p>
+                        </div>
+                    </div>
+
+                    <div class="dash-card pollutants-card">
+                        <h3>Pollutant Breakdown</h3>
+                        <div class="pollutant-list-vertical">
+                            <div class="pol-item">
+                                <div class="pol-head">
+                                    <span class="pol-name">PM2.5</span>
+                                    <span class="pol-value" id="val-pm25">-- µg</span>
+                                </div>
+                                <div class="bar-bg"><div class="bar-fill good" id="bar-pm25" style="width:0%"></div></div>
+                            </div>
+                            <div class="pol-item">
+                                <div class="pol-head">
+                                    <span class="pol-name">PM10</span>
+                                    <span class="pol-value" id="val-pm10">-- µg</span>
+                                </div>
+                                <div class="bar-bg"><div class="bar-fill good" id="bar-pm10" style="width:0%"></div></div>
+                            </div>
+                            <div class="pol-item">
+                                <div class="pol-head">
+                                    <span class="pol-name">NO₂</span>
+                                    <span class="pol-value" id="val-no2">-- ppb</span>
+                                </div>
+                                <div class="bar-bg"><div class="bar-fill good" id="bar-no2" style="width:0%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-card chart-card">
+                    <h3>3-Hour Prediction</h3>
+                    <div class="chart-box">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Seasonal AQI Chart -->
+<div class="dash-card chart-card">
+    <h3>Seasonal AQI Pattern — Mumbai</h3>
+    <p style="color:#64748b;font-size:0.85rem;margin-bottom:1rem;">
+        Historical monthly averages showing why winter has higher pollution
+    </p>
+    <div class="chart-box">
+        <canvas id="seasonalChart"></canvas>
     </div>
-    <div class="card">
-      <h4>Tomorrow Forecast</h4>
-      <h2>165</h2>
+    <div class="seasonal-insight" id="seasonal-insight">
+        Loading seasonal data...
     </div>
-    <div class="card">
-      <h4>Health Risk</h4>
-      <h2 style="color: #ef4444;">High</h2>
-    </div>
-  </section>
-
-  <div class="charts-grid">
-    <div class="chart-card">
-      <h3>AQI Trend (Last 14 Days)</h3>
-      <div class="chart-wrap"><canvas id="aqiChart"></canvas></div>
-    </div>
-    <div class="chart-card">
-      <h3>Pollutant Breakdown</h3>
-      <div class="chart-wrap"><canvas id="pollutantChart"></canvas></div>
-    </div>
-  </div>
-
-  <section class="gen-ai">
-  <h3>
-    <i class="fa-solid fa-brain"></i>
-    AI Health Insight
-  </h3>
-
-  <p>
-    Based on analysis of recent <strong>daily air quality trends</strong>,
-    pollution levels in <strong>Kothrud</strong> are showing a consistent upward
-    movement, primarily influenced by particulate matter (PM₂.₅).
-  </p>
-
-  <p>
-    While this forecast does not resolve hourly fluctuations, the overall
-    trajectory suggests that air quality is likely to remain in the
-    <strong>unhealthy range</strong> over the next day if current conditions persist.
-  </p>
-
-  <p>
-    Residents are advised to reduce prolonged outdoor exposure, particularly
-    individuals with respiratory sensitivities. Maintaining indoor air
-    quality through ventilation control and filtration can help mitigate
-    health risks during elevated pollution periods.
-  </p>
-
-  <!-- VAYU ADVISORY LINE -->
-  <div class="vayu-advisory">
-    <i class="fa-solid fa-shield-heart"></i>
-    <span>VAYU Advisory: Guidance derived from daily air quality trend analysis</span>
-  </div>
-</section>
-
-  <section id="about" class="about">
-    <div class="about-text">
-  <h2>About VAYU</h2>
-
-  <p>
-    <strong>VAYU</strong> is a localized air quality forecasting and advisory platform
-    built using government-validated data from monitoring stations near
-    <strong>MIT–Kothrud</strong>.
-  </p>
-
-  <p>
-    The system analyzes daily AQI and pollutant trends and uses a lightweight
-    machine learning model to predict the next day’s air quality risk.
-    This short-term focus ensures reliable and practical forecasts.
-  </p>
-
-  <p>
-    When unsafe conditions are expected, VAYU generates early warnings and
-    translates predictions into clear health advisories using an AI-assisted layer.
-  </p>
-
-  <p>
-    The name <strong>VAYU</strong>, derived from the Sanskrit word for <em>air</em>,
-    reflects the goal of making air quality risks visible and understandable.
-  </p>
 </div>
 
-    <div class="about-visual">
-        <img src="../frontend/assets/logo/png/just-icon-logo.png" alt="AI Forecasting Illustration" />
-       <p style="color: var(--navy); font-weight: 600;">AI Powered Forecasting</p>
-    </div>
-  </section>
-</main>
+                <div class="ai-box">
+                    <div class="ai-icon">✨</div>
+                    <div class="ai-content">
+                        <div class="ai-badge">VAYU AI Insight</div>
+                        <p class="ai-text" id="ai-text">Fetching insights...</p>
+                    </div>
+                </div>
 
-<footer class="footer">
-  <div class="footer-left">
-    <strong>VAYU</strong> &copy; 2026 | Smart Air Quality Labs
-  </div>
-  <div class="footer-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Data Sources</a>
-    <a href="#">API Documentation</a>
-    <a href="https://github.com/yourusername/vayu" target="_blank">
-      <i class="fa-brands fa-github"></i> GitHub
-    </a>
-  </div>
-</footer>
+            </div>
+        </div>
+    </section>
 
-<script src="../frontend/js/script.js"></script>
+    <section class="section-natural bg-white" id="how-it-works">
+        <div class="dash-container">
+            <div class="section-header text-center">
+                <span class="pill-blue">Our Technology</span>
+                <h2>How VAYU Works</h2>
+                <p>From raw sensor data to your screen in milliseconds.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="step-num">01</div>
+                    <div class="p-icon">📡</div>
+                    <h3>Sensing</h3>
+                    <p>Aggregating data from hyper-local IoT sensors and satellite imagery.</p>
+                </div>
+                <div class="process-card">
+                    <div class="step-num">02</div>
+                    <div class="p-icon">⚡</div>
+                    <h3>Processing</h3>
+                    <p>Cleaning noise and validating data points for street-level accuracy.</p>
+                </div>
+                <div class="process-card">
+                    <div class="step-num">03</div>
+                    <div class="p-icon">🧠</div>
+                    <h3>AI Analysis</h3>
+                    <p>Predicting pollution trends for the next 3 hours using ML models.</p>
+                </div>
+                <div class="process-card">
+                    <div class="step-num">04</div>
+                    <div class="p-icon">🛡️</div>
+                    <h3>Guidance</h3>
+                    <p>Delivering clear, actionable health advice to your device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-natural bg-soft" id="philosophy">
+        <div class="dash-container">
+            <div class="awareness-layout">
+                <div class="aware-content">
+                    <span class="pill-green">Our Philosophy</span>
+                    <h2>Awareness, Not Fear.</h2>
+                    <p class="lead">Air quality data is often presented as a warning. We see it as a tool for empowerment.</p>
+                    <ul class="check-list">
+                        <li>
+                            <span class="check">✓</span>
+                            <div>
+                                <strong>Calm Guidance</strong>
+                                <p>We replace alarmist sirens with actionable advice.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <div>
+                                <strong>Hyper-Local Context</strong>
+                                <p>Pollution varies by street. We track your block.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <div>
+                                <strong>Solution Oriented</strong>
+                                <p>Focusing on what you can do to stay safe.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="aware-visual">
+                    <div class="glass-card-large">
+                        <div class="shield-icon">🛡️</div>
+                        <h3>Empowerment First</h3>
+                        <p>"VAYU is designed to help you manage your health without making you afraid to leave the house. Knowledge is safety."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-natural bg-navy" id="future">
+        <div class="dash-container">
+            <div class="section-header text-center light-text">
+                <h2>The Future of VAYU</h2>
+                <p style="opacity: 0.8;">Building the world's largest air intelligence network.</p>
+            </div>
+            <div class="mission-grid">
+                <div class="m-card">
+                    <div class="m-icon">🌍</div>
+                    <h4>Global Expansion</h4>
+                    <p>Deploying 10,000+ sensors across Tier-2 cities by 2027.</p>
+                </div>
+                <div class="m-card">
+                    <div class="m-icon">🏥</div>
+                    <h4>Health Integration</h4>
+                    <p>Partnering with hospitals to correlate AQI with respiratory health.</p>
+                </div>
+                <div class="m-card">
+                    <div class="m-icon">🤖</div>
+                    <h4>Predictive Policy</h4>
+                    <p>AI models delivering 3-hour predictions to help citizens and governments respond to air quality changes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="dash-container">
+            <div class="footer-grid">
+                <div class="f-brand">
+                    <div class="f-logo">VAYU</div>
+                    <p>Hyper-local air intelligence for a healthier tomorrow.</p>
+                </div>
+                <div class="f-links">
+                    <h4>Product</h4>
+                    <a href="#">Live Map</a>
+                    <a href="#">Analysis</a>
+                    <a href="#">API</a>
+                </div>
+                <div class="f-links">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="f-links">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Vayu Intelligence. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../frontend/js/script.js"></script>
 </body>
 </html>
